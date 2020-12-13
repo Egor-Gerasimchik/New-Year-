@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(24, 24, 24);
+}
+
+#snow{
+  background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
+  z-index: 1;
+  
+  animation: snow 5s linear infinite;
+
+
+}
+@keyframes snow{
+  0%{
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100%{
+    background-position: 500px 750px, 150px 1500px, -175px 150px;
+  }
+}
+
+
+
+#player{
+  position: fixed;
+  left: 50%;
+  width: 50px;
+  background-image: url("img/tree_toy.png");
+  background-size: contain;
+  height: 158px;
+}
