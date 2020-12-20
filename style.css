@@ -1,32 +1,164 @@
-body{
+body {
   background-color: rgb(24, 24, 24);
 }
 
-#snow{
-  background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
-  z-index: 1;
-  
-  animation: snow 5s linear infinite;
-
-
+#tree{
+  position: fixed;
+  left: calc(50% - 50px);
+  background-image: url(img/tree.png);
+  background-size: contain;
+  width: 220px;
+  height: 230px;
 }
-@keyframes snow{
+
+#toy1{
+  position: relative;
+  width: 32px;
+  left: 46px;
+  top: 91px;
+
+  transform-origin: top;
+  animation: toyShake linear 3s infinite;
+}
+
+#toy2{
+  position: relative;
+  width: 32px;
+  left: 70px;
+  top: 70px;
+
+  transform-origin: top;
+  animation: toyShake linear 3s 0.2s infinite;
+}
+
+#toy3{
+  position: relative;
+  width: 32px;
+  left: 76px;
+  top: 125px;
+
+  transform-origin: top;
+  animation: toyShake linear 3s 1s infinite;
+}
+
+@keyframes toyShake {
   0%{
-    background-position: 0px 0px, 0px 0px, 0px 0px;
+      transform: rotate(0deg);
+  }
+
+  25%{
+      transform: rotate(45deg);
+  }
+
+  50%{
+      transform: rotate(0);
+  }
+
+  75%{
+      transform: rotate(-45deg);
   }
 
   100%{
+      transform: rotate(0deg);
+  }
+}
+
+#countdown{
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  color: rgb(55, 55, 55);
+  user-select: none;
+  font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+#countdown>p{
+  font-size: 42pt;
+  position: relative;
+}
+
+#countdown>span{
+  font-size: 72pt;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#snow {
+  background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
+  z-index: 1;
+
+  animation: #fffafa 40s linear infinite;
+
+
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  25% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+
+  100% {
     background-position: 500px 750px, 150px 1500px, -175px 150px;
   }
 }
 
 
 
-#player{
-  position: fixed;
+@font-face {
+  font-family: 'Mountains of Christmas';
+  font-style: normal;
+  src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+
+#graz {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  color: rgb(165, 165, 255);
+  font-family: 'Mountains of Christmas';
+  user-select: none;
+}
+
+#graz>h1 {
+  font-size: 140pt;
+}
+
+.window {
+  transform: scale(0.5);
+  width: 300px;
+  height: 300px;
+  background-color: rgb(36, 36, 36);
+  position: absolute;
   left: 50%;
-  width: 50px;
-  background-image: url("img/tree_toy.png");
-  background-size: contain;
-  height: 158px;
+  top: 60%;
+  border-radius: 50%;
+  border: 5px solid #f7e01a;
+  overflow: hidden;
 }
