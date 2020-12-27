@@ -6,52 +6,172 @@
   <title>С новым годом!</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="DedMoroz.css" />
+  <link rel="stylesheet" href="snowman.css" />
+  <link rel="stylesheet" href="tree.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 </head>
 
 <body id="snow">
 
-  <div id="tree">
-    <img id="toy1" src="img/tree_toy.png">
-    <img id="toy2" src="img/tree_toy.png">
-    <img id="toy3" src="img/tree_toy.png">
-  </div>
-
-  <div id="countdown">
-    <p>До Нового Года осталось</p>
-    <span id="days">0</span> :
-    <span id="hours">00</span> :
-    <span id="minutes">00</span> :
-    <span id="seconds">00</span> :
-  </div>
-
-  <!-- <div id="graz">
-    <h1>Happy New 2021!</h1>
-  </div> -->
-
-  <div class="window">
-    <div class="santa">
-      <div class="head">
-        <div class="face">
-          <div class="redhat">
-            <div class="whitepart"></div>
-            <div class="redpart"></div>
-            <div class="hatball"></div>
+  <div class="d-none d-lg-block">
+    <div class="window">
+      <div class="santa">
+        <div class="head">
+          <div class="face">
+            <div class="redhat">
+              <div class="whitepart"></div>
+              <div class="redpart"></div>
+              <div class="hatball"></div>
+            </div>
+            <div class="eyes"></div>
+            <div class="beard">
+              <div class="nouse"></div>
+              <div class="mouth"></div>
+            </div>
           </div>
-          <div class="eyes"></div>
-          <div class="beard">
-            <div class="nouse"></div>
-            <div class="mouth"></div>
+          <div class="ears"></div>
+        </div>
+        <div class="body"></div>
+      </div>
+    </div>
+
+    <div id="tree">
+      <div id="treeStar" class="glowing">
+        <div></div>
+      </div>
+      <img id="toy1" src="img/tree_toy.png">
+      <img id="toy2" src="img/tree_toy.png">
+      <img id="toy3" src="img/tree_toy.png">
+    </div>
+
+    <div id="graz">
+      <h1>Happy New 2021!</h1>
+    </div>
+
+    <div id="countdown">
+      <p>До Нового Года осталось</p>
+      <span class="days">0</span> :
+      <span class="hours">00</span> :
+      <span class="minutes">00</span> :
+      <span class="seconds">00</span> :
+    </div>
+
+
+    <div class="snowman">
+      <div class="snowmanFace faceDance">
+        <div class="shadow1">
+          <div class="eyel"></div>
+          <div class="eyer"></div>
+          <div class="nose"></div>
+          <div class="hat">
+            <div class="h-top"></div>
           </div>
         </div>
-        <div class="ears"></div>
       </div>
-      <div class="body"></div>
+      <div class="snowmanBody">
+        <div class="shadow2"></div>
+        <div class="buttons">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
+        </div>
+        <div class="hand-l">
+          <div class="s1"></div>
+        </div>
+        <div class="hand-r">
+          <div class="s2"></div>
+        </div>
+      </div>
+      <div class="scarf scarfWobble">
+        <div class="sc1"></div>
+        <div class="sc2"></div>
+      </div>
     </div>
   </div>
+
+  <div class="d-block d-lg-none">
+    <div class="windowMobile">
+      <div class="santa">
+        <div class="head">
+          <div class="face">
+            <div class="redhat">
+              <div class="whitepart"></div>
+              <div class="redpart"></div>
+              <div class="hatball"></div>
+            </div>
+            <div class="eyes"></div>
+            <div class="beard">
+              <div class="nouse"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="ears"></div>
+        </div>
+        <div class="body"></div>
+      </div>
+    </div>
+    <div id="treeMobile">
+      <div id="treeStar" class="glowing">
+        <div></div>
+      </div>
+      <img id="toy1" src="img/tree_toy.png">
+      <img id="toy2" src="img/tree_toy.png">
+      <img id="toy3" src="img/tree_toy.png">
+    </div>
+
+    <div id="grazMobile">
+      <h1>Happy New 2021!</h1>
+    </div>
+
+    <div id="countdownMobile">
+      <p>До Нового Года осталось</p>
+      <span class="days">0</span> :
+      <span class="hours">00</span> :
+      <span class="minutes">00</span> :
+      <span class="seconds">00</span> :
+    </div>
+
+    <div class="snowmanMobile">
+      <div class="snowmanFace faceDance">
+        <div class="shadow1">
+          <div class="eyel"></div>
+          <div class="eyer"></div>
+          <div class="nose"></div>
+          <div class="hat">
+            <div class="h-top"></div>
+          </div>
+        </div>
+      </div>
+      <div class="snowmanBody">
+        <div class="shadow2"></div>
+        <div class="buttons">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
+        </div>
+        <div class="hand-l">
+          <div class="s1"></div>
+        </div>
+        <div class="hand-r">
+          <div class="s2"></div>
+        </div>
+      </div>
+      <div class="scarf scarfWobble">
+        <div class="sc1"></div>
+        <div class="sc2"></div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
 
 
 

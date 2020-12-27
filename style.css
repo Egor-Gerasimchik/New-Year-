@@ -1,15 +1,8 @@
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(68, 52, 52) !important;
 }
 
-#tree{
-  position: fixed;
-  left: calc(50% - 50px);
-  background-image: url(img/tree.png);
-  background-size: contain;
-  width: 220px;
-  height: 230px;
-}
+
 
 #toy1{
   position: relative;
@@ -67,7 +60,7 @@ body {
   position: absolute;
   left: 35%;
   top: 25%;
-  color: rgb(55, 55, 55);
+  color: rgb(255, 255, 255);
   user-select: none;
   font-family: 'Liu Jian Mao Cao', cursive;
 }
@@ -83,7 +76,24 @@ body {
 }
 
 
+#countdownMobile{
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  font-family: 'Liu Jian Mao Cao', cursive;
+}
 
+#countdownMobile>p{
+  font-size: 42pt;
+  position: relative;
+}
+
+#countdownMobile>span{
+  font-size: 72pt;
+  position: relative;
+}
 
 
 
@@ -110,7 +120,7 @@ body {
   background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
   z-index: 1;
 
-  animation: #fffafa 40s linear infinite;
+  animation: snow 40s linear infinite;
 
 
 }
@@ -150,14 +160,40 @@ body {
   font-size: 140pt;
 }
 
+#grazMobile {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  color: rgb(165, 165, 255);
+  font-family: 'Mountains of Christmas';
+  user-select: none;
+}
+
+#grazMobile>h1 {
+  font-size: 140pt;
+}
+
 .window {
   transform: scale(0.5);
   width: 300px;
   height: 300px;
   background-color: rgb(36, 36, 36);
   position: absolute;
-  left: 50%;
-  top: 60%;
+  left: 40%;
+  top: 1%;
+  border-radius: 50%;
+  border: 5px solid #f7e01a;
+  overflow: hidden;
+}
+
+.windowMobile {
+  transform: scale(0.5);
+  width: 300px;
+  height: 300px;
+  background-color: rgb(36, 36, 36);
+  position: absolute;
+  left: 40%;
+  top: 1%;
   border-radius: 50%;
   border: 5px solid #f7e01a;
   overflow: hidden;
