@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="snowman.css" />
   <link rel="stylesheet" href="tree.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="postcard.css">
   <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -16,7 +17,25 @@
 
 <body id="snow">
 
+
   <div class="d-none d-lg-block">
+
+    <div class="envlope-wrapper d-none">
+      <div id="envelope" class="close">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter">
+              <div class="text caption">Дорогой друг!</div>
+              <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+          </div>
+          <div class="hearts">
+              <div class="heart heart1"></div>
+              <div class="heart heart2"></div>
+              <div class="heart heart3"></div>
+          </div>
+      </div>
+  </div>
+
     <div class="window">
       <div class="santa">
         <div class="head">
@@ -128,11 +147,27 @@
 
     <div id="countdownMobile">
       <p>До Нового Года осталось</p>
-      <span class="days">0</span> :
-      <span class="hours">00</span> :
-      <span class="minutes">00</span> :
-      <span class="seconds">00</span> :
+      <span class="days">0 :</span> 
+      <span class="hours">00 :</span> 
+      <span class="minutes">00 :</span> 
+      <span class="seconds">00 :</span> 
     </div>
+
+    <div class="envlope-wrapperMobile d-none">
+      <div id="envelopeMobile" class="close">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter">
+              <div class="text caption">Привет!</div>
+              <div class="text ">Поздравляю тебя с наступившим 2021 Годом!</div>
+          </div>
+          <div class="hearts">
+              <div class="heart heart1"></div>
+              <div class="heart heart2"></div>
+              <div class="heart heart3"></div>
+          </div>
+      </div>
+  </div>
 
     <div class="snowmanMobile">
       <div class="snowmanFace faceDance">
